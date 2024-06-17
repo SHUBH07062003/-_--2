@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets/calc_style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="calculator">
+        <h1>Calculator</h1>
+        <p id="last_operation_history"></p>
+        <div id="box" class="box">0</div>
+        <div id="buttons">
+            <button onclick="calculate_percentage()">%</button>
+            <button onclick="clear_entry()">CE</button>
+            <button onclick="button_clear()">C</button>
+            <button id="backspace_btn" onclick="backspace_remove()"></button>
+            <button onclick="division_one()">¹∕ₓ</button>
+            <button onclick="power_of()">𝑥²</button>
+            <button onclick="square_root()">√𝑥</button>
+            <button id="plusOp" value="+" class="operator" onclick="button_number('+')">+</button>
+            <button onclick="button_number(7)">7</button>
+            <button onclick="button_number(8)">8</button>
+            <button onclick="button_number(9)">9</button>
+            <button id="subOp" value="-" class="operator" onclick="button_number('-')">-</button>
+            <button onclick="button_number(4)">4</button>
+            <button onclick="button_number(5)">5</button>
+            <button onclick="button_number(6)">6</button>
+            <button id="multiOp" value="*" class="operator" onclick="button_number('*')">×</button>
+            <button onclick="button_number(1)">1</button>
+            <button onclick="button_number(2)">2</button>
+            <button onclick="button_number(3)">3</button>
+            <button id="divOp" value="/" class="operator" onclick="button_number('/')">÷</button>
+            <button onclick="plus_minus()">±</button>
+            <button onclick="button_number(0)">0</button>
+            <button id="dot" value="." onclick="button_number('.')">.</button>
+            <button value="=" class="operator" id="equal_sign" onclick="button_number('=')">=</button>
+        </div>
+    </div>
+    <script language="JavaScript" src="script.js" type="text/javascript"></script>
+</body>
+</html>
